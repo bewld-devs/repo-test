@@ -15,7 +15,7 @@ function handleSubmit() {
 }
 
 function postData(formData) {
-    fetch('main.php', {
+    fetch('src/main.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
