@@ -3,7 +3,7 @@
 echo "Creating a copy of repo..."
 
 echo "$1/archive/master.zip" 
-curl -Lk "$1/archive/master.zip" -o copy/master.zip
+curl -Lk "$1/archive/master.zip" > copy/master.zip
 
 
 unzip ./copy/master.zip
@@ -14,8 +14,8 @@ echo "Running tests"
 
 cd "$2-master"
 
-#echo "Install packages"
-#npm install
+echo "Install packages"
+npm install
 
 npm test
 
